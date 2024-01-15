@@ -19,7 +19,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 ## Function to load Gemini model and get respones
 
 def get_model_response(input,image):
-    model = genai.GenerativeModel('gemini-pro-visio')
+    model = genai.GenerativeModel('gemini-pro-vision')
     if input != '':
         response = model.generate_content([input,image])
     else:
